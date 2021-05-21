@@ -1,0 +1,90 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  /* background-color: #edf0f2; */
+  /* background: linear-gradient(to top, #000000 0%, #434343 100%); */
+  background-image: url(img/bgc.jpg);
+}
+
+/* header */
+.navbar {
+  background-color: #40404057;
+  border-left: 5px solid white;
+  border-right: 5px solid white;
+}
+.navbar h1 {
+  text-decoration: none;
+  color: whitesmoke;
+  display: block;
+  text-align: center;
+  margin: auto;
+  padding: 18px;
+}
+
+/* camera section */
+
+.fileUpload {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 142px 465px;
+}
+
+/* .contanier {
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+} */
+
+/* main file chose */
+
+.upload-box {
+  font-size: 16px;
+  background: white;
+  border-radius: 50px;
+  box-shadow: -4px 4px black;
+  width: 350px;
+  outline: none;
+}
+::-webkit-file-upload-button {
+  color: white;
+  background: #206a5d;
+  padding: 20px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 1px 0 1px 1px #6b4559;
+  outline: none;
+}
+::-webkit-file-upload-button:hover {
+  background: 430a5e;
+}
+
+/* uploadbutton  */
+.upload-button {
+  justify-content: center;
+  margin: auto;
+  padding: 33px;
+}
+form .upload {
+  color: white;
+  background: #206a5d;
+  padding: 14px 114px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: -2px 5px black;
+  outline: none;
+}
+
+/* utility */
+.h-primary {
+  color: whitesmoke;
+  text-align: center;
+  font-size: large;
+  font-family: sans-serif;
+  font-size: 1.8rem;
+}
