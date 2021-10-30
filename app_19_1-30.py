@@ -2,6 +2,7 @@
 # coding: utf-8
 
 # In[9]:
+
 from nltk.stem import WordNetLemmatizer
 lemmer = WordNetLemmatizer()
 #Importing required libraries
@@ -42,6 +43,7 @@ def upload():
 def upload():
     return render_template("in2.html")
 
+
 json_file = open('/Users/hritvikgupta/Desktop/model_20_may1.json', 'r')
 loaded_model_json = json_file.read()
 json_file.close()
@@ -53,7 +55,8 @@ def clean_text(text):
         tokens = re.split('\W+', text)
         text = " ".join([lemmer.lemmatize(word) for word in tokens if word not in stopwords])
         return text
-def sentence_similarity(sent1, sent2, stopwords=None):
+
+    def sentence_similarity(sent1, sent2, stopwords=None):
     if stopwords is None:
         stopwords = []
     #print(set(sent1.split(' ') + sent2.split(' ')))
@@ -135,6 +138,7 @@ def img_to_features(img_path, tokenizer):
     test_ = pad_sequences(test_, maxlen = max_len)
     return test_, test
 @app.route('/predict',methods=['POST'])
+
 
 def predict():
     if request.method == 'POST':  
